@@ -20,7 +20,8 @@ export default function () {
                 onChangeText={value => setLogin(value)}
                 keyboardType={"email-address"} />
 
-            <TextInput style={Style.input} value={senha} placeholder="Senha:" placeholderTextColor="black" />
+            <TextInput style={Style.input} value={senha} placeholder="Senha:" placeholderTextColor="black"
+                secureTextEntry={true} />
 
 
 
