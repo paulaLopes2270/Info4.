@@ -19,8 +19,8 @@ export default StyleSheet.create({
         width: 288,
         height: 105,
         flexBasis: 125,
-        marginTop: 110,
-        marginBottom: 110,
+        marginTop: 25,
+        marginBottom: 80,
     },
 
     input: {
@@ -43,15 +43,17 @@ export default StyleSheet.create({
         borderRadius: 20,
         alignItems: `center`,
         justifyContent: `center`,
-        marginBottom: 50,
+        
 
     },
 
     checkboxContainer: {
 
         flexDirection: "row",
-        marginBottom: 55,
+        marginBottom: 25,
         alignItems: "center",
+        justifyContent:"center", 
+        
 
     },
     checkbox: {

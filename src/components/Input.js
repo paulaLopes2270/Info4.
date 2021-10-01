@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import { TextInput, View, Text, } from "react-native";
+import { TextInput, View, Text, KeyboardAvoidingView, KeyboardAvoidingViewComponent, ScrollView, ScrollViewBase, ScrollViewComponent, _ScrollView, } from "react-native";
 import CheckBox from '@react-native-community/checkbox';
 import Style from "../styles/Style";
 
@@ -12,14 +12,20 @@ export default function () {
     const [isSelected, setSelected] = useState(false);
 
     return (
-        <View style={Style.container}>
+        <KeyboardAvoidingView >
+
+
+        <View>
             <TextInput style={Style.input} value={login} placeholder="Login:" placeholderTextColor="black"
                 onChangeText={value => setLogin(value)}
                 keyboardType={"email-address"} />
 
             <TextInput style={Style.input} value={senha} placeholder="Senha:" placeholderTextColor="black" />
 
-            <View style={Style.checkboxContainer} >
+
+
+
+            <View style={Style.checkboxContainer}  >
                 <CheckBox
                     boxType='circle'
                     value={isSelected}
@@ -32,8 +38,9 @@ export default function () {
                 <Text>Manter Conectado</Text>
 
             </View>
+            </View>
 
-        </View>
+            </KeyboardAvoidingView>
 
-    )
+            )
 }
